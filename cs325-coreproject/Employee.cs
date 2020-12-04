@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace cs325_coreproject
 {
-    class Employee : Person
+    abstract class Employee : Person
     {
         private string eid;
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace cs325_coreproject
 {
-    class Person
+    abstract class Person
     {
         string firstName;
         string lastName;
