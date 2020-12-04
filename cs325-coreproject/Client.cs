@@ -13,6 +13,15 @@ namespace cs325_coreproject
         private string phone;
         private string primaryContact;
 
+        public Client(string first, string last, string email, string phone, string contact)
+        {
+            setFirstName(first);
+            setLastName(last);
+            setPhone(phone);
+            setEmail(email);
+            setContact(contact);
+        }
+
         public string getAddress()
         {
             return address;
