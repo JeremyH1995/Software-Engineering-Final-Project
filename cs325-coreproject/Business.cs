@@ -8,5 +8,6 @@ namespace cs325_coreproject
 {
     class Business
     {
+        //just to test 
     }
 }
