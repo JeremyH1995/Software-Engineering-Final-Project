@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace cs325_coreproject
 {
-    class Business
+    class Business : Client
     {
-        //just to test 
+        
     }
 }

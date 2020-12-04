@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace cs325_coreproject
 {
-    class Secretary
+    class Secretary : Employee
     {
     }
 }
