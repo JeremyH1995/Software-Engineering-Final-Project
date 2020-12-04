@@ -17,6 +17,8 @@ namespace cs325_coreproject
 
         public Business(string ein, string name, string address, string email, string phone)
         {
+            setFirstName("");
+            setLastName("");
             setEin(ein);
             setName(name);
             setAddress(address);
