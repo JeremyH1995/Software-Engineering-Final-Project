@@ -10,8 +10,8 @@ namespace cs325_coreproject
     {
         private string eid;
 
-        public string getEid{ return eid;}
-        public string setEid(string eid){ this.eid = eid;}
+        public string getEid(){ return eid;}
+        public void setEid(string eid){ this.eid = eid;}
            
         }
     }
