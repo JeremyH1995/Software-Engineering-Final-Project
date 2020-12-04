@@ -12,5 +12,46 @@ namespace cs325_coreproject
         private string email;
         private string phone;
         private string primaryContact;
+
+        public string getAddress()
+        {
+            return address;
+        }
+
+        public void setAddress(string address)
+        {
+            this.address = address;
+        }
+
+        public string getEmail()
+        {
+            return email;
+        }
+
+        public void setEmail(string email)
+        {
+            this.email = email;
+        }
+
+        public string getPhone()
+        {
+            return phone;
+        }
+
+        public void setPhone(string phone)
+        {
+            this.phone = phone;
+        }
+
+        public string getContact()
+        {
+            return primaryContact;
+        }
+
+        public void setContact(string contact)
+        {
+            primaryContact = contact;
+        }
+
     }
 }
