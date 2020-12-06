@@ -48,11 +48,11 @@
   <ItemGroup>
     <Compile Include="Business.cs" />
     <Compile Include="Client.cs" />
-    <Compile Include="CreateAccount.cs">
+    <Compile Include="CreateClient.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CreateAccount.Designer.cs">
-      <DependentUpon>CreateAccount.cs</DependentUpon>
+    <Compile Include="CreateClient.Designer.cs">
+      <DependentUpon>CreateClient.cs</DependentUpon>
     </Compile>
     <Compile Include="Employee.cs" />
     <Compile Include="ClientLogin.cs">
@@ -75,6 +75,12 @@
     </Compile>
     <Compile Include="Logistics.cs" />
     <Compile Include="Manager.cs" />
+    <Compile Include="ManagerHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerHome.Designer.cs">
+      <DependentUpon>ManagerHome.cs</DependentUpon>
+    </Compile>
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -88,8 +94,8 @@
     <EmbeddedResource Include="ClientLogin.resx">
       <DependentUpon>ClientLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CreateAccount.resx">
-      <DependentUpon>CreateAccount.cs</DependentUpon>
+    <EmbeddedResource Include="CreateClient.resx">
+      <DependentUpon>CreateClient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EmployeeLogin.resx">
       <DependentUpon>EmployeeLogin.cs</DependentUpon>

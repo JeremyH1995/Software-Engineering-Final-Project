@@ -1,7 +1,7 @@
 ﻿
 namespace cs325_coreproject
 {
-    partial class CreateAccount
+    partial class ManagerHome
     {
         /// <summary>
         /// Required designer variable.
@@ -29,17 +29,10 @@ namespace cs325_coreproject
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // CreateAccount
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(561, 351);
-            this.Name = "CreateAccount";
-            this.Text = "CreateAccount";
-            this.ResumeLayout(false);
-
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "ManagerHome";
         }
 
         #endregion
