@@ -31,7 +31,7 @@ namespace cs325_coreproject
         {
             this.label1 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -46,17 +46,17 @@ namespace cs325_coreproject
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(116, 47);
+            this.txtEmail.Location = new System.Drawing.Point(168, 47);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(100, 22);
             this.txtEmail.TabIndex = 1;
             // 
-            // textBox1
+            // txtPassword
             // 
-            this.textBox1.Location = new System.Drawing.Point(116, 75);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 3;
+            this.txtPassword.Location = new System.Drawing.Point(168, 75);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(100, 22);
+            this.txtPassword.TabIndex = 3;
             // 
             // label2
             // 
@@ -71,13 +71,13 @@ namespace cs325_coreproject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(250, 151);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(325, 156);
+            this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label1);
             this.Name = "ClientLogin";
-            this.Text = "Login";
+            this.Text = "Client Login";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -87,7 +87,7 @@ namespace cs325_coreproject
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label label2;
     }
 }
