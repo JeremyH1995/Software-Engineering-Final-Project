@@ -12,9 +12,6 @@ namespace cs325_coreproject
         private string lastName;
         private string password;
 
-        private static List<Person> personList =  new List<Person>();
-
-
         public string getFirstName() {
             return firstName;        
         }
@@ -44,21 +41,6 @@ namespace cs325_coreproject
         public void setPassword(string p)
         {
             password = p;
-        }
-
-        public static void addPerson(Person person)
-        {
-            personList.Add(person);
-        }
-
-        public static void removePerson(Person person)
-        {
-            personList.Remove(person);
-        }
-
-        public static List<Person> getPeopleList()
-        {
-            return personList;
         }
 
     }
