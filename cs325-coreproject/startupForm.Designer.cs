@@ -35,7 +35,7 @@ namespace cs325_coreproject
             // 
             // Login
             // 
-            this.Login.Location = new System.Drawing.Point(213, 148);
+            this.Login.Location = new System.Drawing.Point(289, 196);
             this.Login.Name = "Login";
             this.Login.Size = new System.Drawing.Size(240, 52);
             this.Login.TabIndex = 0;
@@ -44,7 +44,7 @@ namespace cs325_coreproject
             // 
             // Create
             // 
-            this.Create.Location = new System.Drawing.Point(213, 217);
+            this.Create.Location = new System.Drawing.Point(289, 254);
             this.Create.Name = "Create";
             this.Create.Size = new System.Drawing.Size(240, 53);
             this.Create.TabIndex = 1;
