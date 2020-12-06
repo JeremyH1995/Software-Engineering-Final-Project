@@ -29,20 +29,20 @@ namespace cs325_coreproject
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtEID = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtPassword
             // 
-            this.textBox1.Location = new System.Drawing.Point(136, 74);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(76, 20);
-            this.textBox1.TabIndex = 7;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtPassword.Location = new System.Drawing.Point(136, 74);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(76, 20);
+            this.txtPassword.TabIndex = 7;
+            this.txtPassword.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
             // 
@@ -55,14 +55,14 @@ namespace cs325_coreproject
             this.label2.Text = "Password: ";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // txtEmail
+            // txtEID
             // 
-            this.txtEmail.Location = new System.Drawing.Point(136, 51);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(76, 20);
-            this.txtEmail.TabIndex = 5;
-            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
+            this.txtEID.Location = new System.Drawing.Point(136, 51);
+            this.txtEID.Margin = new System.Windows.Forms.Padding(2);
+            this.txtEID.Name = "txtEID";
+            this.txtEID.Size = new System.Drawing.Size(76, 20);
+            this.txtEID.TabIndex = 5;
+            this.txtEID.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // label1
             // 
@@ -80,9 +80,9 @@ namespace cs325_coreproject
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(335, 136);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.txtEID);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "EmployeeLogin";
@@ -94,9 +94,9 @@ namespace cs325_coreproject
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtEID;
         private System.Windows.Forms.Label label1;
     }
 }
