@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace cs325_coreproject
 {
-    public partial class ClientLogin : Form
+    public partial class frmClientLogin : Form
     {
-        public ClientLogin()
+        public frmClientLogin()
         {
             InitializeComponent();
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

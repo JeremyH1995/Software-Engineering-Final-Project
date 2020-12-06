@@ -13,6 +13,6 @@ namespace cs325_coreproject
         public string getEid(){ return eid;}
         public void setEid(string eid){ this.eid = eid;}
            
-        }
+        
     }
 }
