@@ -8,8 +8,9 @@ namespace cs325_coreproject
 {
     abstract class Person
     {
-        string firstName;
-        string lastName;
+        private string firstName;
+        private string lastName;
+        private string password;
 
 
         public string getFirstName() {
@@ -31,6 +32,16 @@ namespace cs325_coreproject
 
         public void setLastName(string name) {
             this.lastName = name;
+        }
+
+        public string getPassword()
+        {
+            return password;
+        }
+
+        public void setPassword(string p)
+        {
+            password = p;
         }
 
     }
