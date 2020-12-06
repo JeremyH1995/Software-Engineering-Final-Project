@@ -61,6 +61,5 @@ namespace cs325_coreproject
         {
             primaryContact = contact;
         }
-
     }
 }
