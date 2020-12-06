@@ -13,10 +13,11 @@ namespace cs325_coreproject
         private string phone;
         private string primaryContact;
 
-        public Client(string first, string last, string email, string phone, string contact)
+        public Client(string first, string last, string password, string email, string phone, string contact)
         {
             setFirstName(first);
             setLastName(last);
+            setPassword(password);
             setPhone(phone);
             setEmail(email);
             setContact(contact);
