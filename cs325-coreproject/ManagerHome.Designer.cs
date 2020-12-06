@@ -30,10 +30,10 @@ namespace cs325_coreproject
         private void InitializeComponent()
         {
             this.Logout = new System.Windows.Forms.Button();
-            this.List = new System.Windows.Forms.Button();
             this.Add = new System.Windows.Forms.Button();
             this.Edit = new System.Windows.Forms.Button();
             this.Remove = new System.Windows.Forms.Button();
+            this.EmpListBox = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // Logout
@@ -44,16 +44,6 @@ namespace cs325_coreproject
             this.Logout.TabIndex = 0;
             this.Logout.Text = "Logout";
             this.Logout.UseVisualStyleBackColor = true;
-            // 
-            // List
-            // 
-            this.List.Location = new System.Drawing.Point(233, 180);
-            this.List.Name = "List";
-            this.List.Size = new System.Drawing.Size(109, 23);
-            this.List.TabIndex = 1;
-            this.List.Text = "List Employees";
-            this.List.UseVisualStyleBackColor = true;
-            this.List.Click += new System.EventHandler(this.button2_Click);
             // 
             // Add
             // 
@@ -84,15 +74,23 @@ namespace cs325_coreproject
             this.Remove.Text = "Remove Employee";
             this.Remove.UseVisualStyleBackColor = true;
             // 
+            // EmpListBox
+            // 
+            this.EmpListBox.FormattingEnabled = true;
+            this.EmpListBox.Location = new System.Drawing.Point(233, 108);
+            this.EmpListBox.Name = "EmpListBox";
+            this.EmpListBox.Size = new System.Drawing.Size(109, 95);
+            this.EmpListBox.TabIndex = 5;
+            // 
             // ManagerHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.EmpListBox);
             this.Controls.Add(this.Remove);
             this.Controls.Add(this.Edit);
             this.Controls.Add(this.Add);
-            this.Controls.Add(this.List);
             this.Controls.Add(this.Logout);
             this.Name = "ManagerHome";
             this.Text = "ManagerHome";
@@ -103,9 +101,9 @@ namespace cs325_coreproject
         #endregion
 
         private System.Windows.Forms.Button Logout;
-        private System.Windows.Forms.Button List;
         private System.Windows.Forms.Button Add;
         private System.Windows.Forms.Button Edit;
         private System.Windows.Forms.Button Remove;
+        private System.Windows.Forms.ListBox EmpListBox;
     }
 }
