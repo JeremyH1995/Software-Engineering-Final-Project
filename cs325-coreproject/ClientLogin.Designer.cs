@@ -94,6 +94,7 @@ namespace cs325_coreproject
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmClientLogin";
             this.Text = "Client Login";
+            this.Load += new System.EventHandler(this.frmClientLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

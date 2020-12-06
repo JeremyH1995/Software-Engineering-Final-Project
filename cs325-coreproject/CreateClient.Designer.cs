@@ -40,103 +40,136 @@ namespace cs325_coreproject
             this.Address = new System.Windows.Forms.Label();
             this.PrimaryContact = new System.Windows.Forms.Label();
             this.Submit = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(173, 71);
+            this.textBox1.Location = new System.Drawing.Point(231, 87);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.Size = new System.Drawing.Size(132, 22);
             this.textBox1.TabIndex = 0;
             // 
             // EmailLabel
             // 
             this.EmailLabel.AutoSize = true;
-            this.EmailLabel.Location = new System.Drawing.Point(129, 74);
+            this.EmailLabel.Location = new System.Drawing.Point(172, 91);
+            this.EmailLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.EmailLabel.Name = "EmailLabel";
-            this.EmailLabel.Size = new System.Drawing.Size(38, 13);
+            this.EmailLabel.Size = new System.Drawing.Size(50, 17);
             this.EmailLabel.TabIndex = 1;
             this.EmailLabel.Text = "Email: ";
             // 
             // PaswordLabel
             // 
             this.PaswordLabel.AutoSize = true;
-            this.PaswordLabel.Location = new System.Drawing.Point(108, 100);
+            this.PaswordLabel.Location = new System.Drawing.Point(144, 123);
+            this.PaswordLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PaswordLabel.Name = "PaswordLabel";
-            this.PaswordLabel.Size = new System.Drawing.Size(59, 13);
+            this.PaswordLabel.Size = new System.Drawing.Size(77, 17);
             this.PaswordLabel.TabIndex = 2;
             this.PaswordLabel.Text = "Password: ";
             // 
             // PasswordTextBox
             // 
-            this.PasswordTextBox.Location = new System.Drawing.Point(173, 97);
+            this.PasswordTextBox.Location = new System.Drawing.Point(231, 119);
+            this.PasswordTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PasswordTextBox.Name = "PasswordTextBox";
-            this.PasswordTextBox.Size = new System.Drawing.Size(100, 20);
+            this.PasswordTextBox.Size = new System.Drawing.Size(132, 22);
             this.PasswordTextBox.TabIndex = 3;
             // 
             // PhoneTextBox
             // 
-            this.PhoneTextBox.Location = new System.Drawing.Point(173, 123);
+            this.PhoneTextBox.Location = new System.Drawing.Point(231, 176);
+            this.PhoneTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PhoneTextBox.Name = "PhoneTextBox";
-            this.PhoneTextBox.Size = new System.Drawing.Size(100, 20);
+            this.PhoneTextBox.Size = new System.Drawing.Size(132, 22);
             this.PhoneTextBox.TabIndex = 4;
             // 
             // AddressTextBox
             // 
-            this.AddressTextBox.Location = new System.Drawing.Point(173, 149);
+            this.AddressTextBox.Location = new System.Drawing.Point(231, 208);
+            this.AddressTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AddressTextBox.Name = "AddressTextBox";
-            this.AddressTextBox.Size = new System.Drawing.Size(100, 20);
+            this.AddressTextBox.Size = new System.Drawing.Size(132, 22);
             this.AddressTextBox.TabIndex = 5;
             // 
             // PrimeContactTextBox
             // 
-            this.PrimeContactTextBox.Location = new System.Drawing.Point(173, 175);
+            this.PrimeContactTextBox.Location = new System.Drawing.Point(231, 240);
+            this.PrimeContactTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PrimeContactTextBox.Name = "PrimeContactTextBox";
-            this.PrimeContactTextBox.Size = new System.Drawing.Size(100, 20);
+            this.PrimeContactTextBox.Size = new System.Drawing.Size(132, 22);
             this.PrimeContactTextBox.TabIndex = 6;
             // 
             // PhoneNumber
             // 
             this.PhoneNumber.AutoSize = true;
-            this.PhoneNumber.Location = new System.Drawing.Point(83, 126);
+            this.PhoneNumber.Location = new System.Drawing.Point(111, 180);
+            this.PhoneNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PhoneNumber.Name = "PhoneNumber";
-            this.PhoneNumber.Size = new System.Drawing.Size(84, 13);
+            this.PhoneNumber.Size = new System.Drawing.Size(111, 17);
             this.PhoneNumber.TabIndex = 7;
             this.PhoneNumber.Text = "Phone Number: ";
             // 
             // Address
             // 
             this.Address.AutoSize = true;
-            this.Address.Location = new System.Drawing.Point(116, 152);
+            this.Address.Location = new System.Drawing.Point(155, 212);
+            this.Address.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Address.Name = "Address";
-            this.Address.Size = new System.Drawing.Size(51, 13);
+            this.Address.Size = new System.Drawing.Size(68, 17);
             this.Address.TabIndex = 8;
             this.Address.Text = "Address: ";
             // 
             // PrimaryContact
             // 
             this.PrimaryContact.AutoSize = true;
-            this.PrimaryContact.Location = new System.Drawing.Point(80, 178);
+            this.PrimaryContact.Location = new System.Drawing.Point(107, 244);
+            this.PrimaryContact.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PrimaryContact.Name = "PrimaryContact";
-            this.PrimaryContact.Size = new System.Drawing.Size(87, 13);
+            this.PrimaryContact.Size = new System.Drawing.Size(116, 17);
             this.PrimaryContact.TabIndex = 9;
             this.PrimaryContact.Text = "Primary Contact: ";
             this.PrimaryContact.Click += new System.EventHandler(this.label3_Click);
             // 
             // Submit
             // 
-            this.Submit.Location = new System.Drawing.Point(173, 201);
+            this.Submit.Location = new System.Drawing.Point(231, 272);
+            this.Submit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Submit.Name = "Submit";
-            this.Submit.Size = new System.Drawing.Size(75, 23);
+            this.Submit.Size = new System.Drawing.Size(100, 28);
             this.Submit.TabIndex = 10;
             this.Submit.Text = "Submit";
             this.Submit.UseVisualStyleBackColor = true;
             // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(230, 149);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(132, 22);
+            this.textBox2.TabIndex = 12;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(93, 154);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(129, 17);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Confirm Password: ";
+            // 
             // CreateClient
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(421, 285);
+            this.ClientSize = new System.Drawing.Size(561, 351);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Submit);
             this.Controls.Add(this.PrimaryContact);
             this.Controls.Add(this.Address);
@@ -148,9 +181,9 @@ namespace cs325_coreproject
             this.Controls.Add(this.PaswordLabel);
             this.Controls.Add(this.EmailLabel);
             this.Controls.Add(this.textBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "CreateClient";
-            this.Text = "CreateAccount";
+            this.Text = "Create Client Account";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -169,5 +202,7 @@ namespace cs325_coreproject
         private System.Windows.Forms.Label Address;
         private System.Windows.Forms.Label PrimaryContact;
         private System.Windows.Forms.Button Submit;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label1;
     }
 }

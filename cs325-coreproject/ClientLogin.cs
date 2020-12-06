@@ -11,7 +11,9 @@ using System.Windows.Forms;
 namespace cs325_coreproject
 {
     public partial class frmClientLogin : Form
-    {
+    { 
+        List<Client> clients = new List<Client>();
+        List<Person> people = Database.getPeopleList();
         public frmClientLogin()
         {
             InitializeComponent();
@@ -19,7 +21,45 @@ namespace cs325_coreproject
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
+            if(txtEmail.Text != "" || txtPassword.Text != "")
+            {
+                foreach(Client c in clients)
+                {
+                    if(c.getEmail() == txtEmail.Text)
+                    {
+                        if(c.getPassword() == txtPassword.Text)
+                        {
+                            Database.login(c);
+                            break;
+                        }
+                        else
+                        {
+                            MessageBox.Show("Incorrect Password");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Client doesn't exist");
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Email and Password can't be empty!");
+            }
+        }
 
+        private void frmClientLogin_Load(object sender, EventArgs e)
+        {
+           
+
+            foreach(Person person in people)
+            {
+                if(person.GetType() == typeof(Client))
+                {
+                    clients.Add((Client)person);
+                }
+            }
         }
     }
 }
