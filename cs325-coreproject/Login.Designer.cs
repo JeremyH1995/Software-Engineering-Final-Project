@@ -1,7 +1,7 @@
 ﻿
 namespace cs325_coreproject
 {
-    partial class Login
+    partial class frmLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -41,6 +41,7 @@ namespace cs325_coreproject
             this.btnClient.TabIndex = 0;
             this.btnClient.Text = "Client";
             this.btnClient.UseVisualStyleBackColor = true;
+            this.btnClient.Click += new System.EventHandler(this.btnClient_Click);
             // 
             // btnEmployee
             // 
@@ -50,15 +51,16 @@ namespace cs325_coreproject
             this.btnEmployee.TabIndex = 1;
             this.btnEmployee.Text = "Employee";
             this.btnEmployee.UseVisualStyleBackColor = true;
+            this.btnEmployee.Click += new System.EventHandler(this.btnEmployee_Click);
             // 
-            // Login
+            // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(437, 258);
             this.Controls.Add(this.btnEmployee);
             this.Controls.Add(this.btnClient);
-            this.Name = "Login";
+            this.Name = "frmLogin";
             this.Text = "Login As";
             this.ResumeLayout(false);
 

@@ -29,39 +29,40 @@ namespace cs325_coreproject
         /// </summary>
         private void InitializeComponent()
         {
-            this.Login = new System.Windows.Forms.Button();
-            this.Create = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.btnCreate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // Login
+            // btnLogin
             // 
-            this.Login.Location = new System.Drawing.Point(126, 91);
-            this.Login.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Login.Name = "Login";
-            this.Login.Size = new System.Drawing.Size(221, 64);
-            this.Login.TabIndex = 0;
-            this.Login.Text = "Login";
-            this.Login.UseVisualStyleBackColor = true;
+            this.btnLogin.Location = new System.Drawing.Point(126, 91);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(221, 64);
+            this.btnLogin.TabIndex = 0;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // Create
+            // btnCreate
             // 
-            this.Create.Location = new System.Drawing.Point(126, 163);
-            this.Create.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Create.Name = "Create";
-            this.Create.Size = new System.Drawing.Size(221, 65);
-            this.Create.TabIndex = 1;
-            this.Create.Text = "Create Account";
-            this.Create.UseVisualStyleBackColor = true;
-            this.Create.Click += new System.EventHandler(this.button2_Click);
+            this.btnCreate.Location = new System.Drawing.Point(126, 163);
+            this.btnCreate.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCreate.Name = "btnCreate";
+            this.btnCreate.Size = new System.Drawing.Size(221, 65);
+            this.btnCreate.TabIndex = 1;
+            this.btnCreate.Text = "Create Account";
+            this.btnCreate.UseVisualStyleBackColor = true;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // startupForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(480, 313);
-            this.Controls.Add(this.Create);
-            this.Controls.Add(this.Login);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Controls.Add(this.btnCreate);
+            this.Controls.Add(this.btnLogin);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "startupForm";
             this.Text = "startupForm";
             this.ResumeLayout(false);
@@ -70,7 +71,7 @@ namespace cs325_coreproject
 
         #endregion
 
-        private System.Windows.Forms.Button Login;
-        private System.Windows.Forms.Button Create;
+        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Button btnCreate;
     }
 }

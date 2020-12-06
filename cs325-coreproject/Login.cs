@@ -10,11 +10,25 @@ using System.Windows.Forms;
 
 namespace cs325_coreproject
 {
-    public partial class Login : Form
+    public partial class frmLogin : Form
     {
-        public Login()
+        public frmLogin()
         {
             InitializeComponent();
+        }
+
+        private void btnClient_Click(object sender, EventArgs e)
+        {
+            frmClientLogin loginForm = new frmClientLogin();
+            loginForm.Show();
+            this.Close();
+        }
+
+        private void btnEmployee_Click(object sender, EventArgs e)
+        {
+            frmEmployeeLogin loginForm = new frmEmployeeLogin();
+            loginForm.Show();
+            this.Close();
         }
     }
 }

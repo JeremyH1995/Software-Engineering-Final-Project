@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace cs325_coreproject
 {
-    public partial class EmployeeLogin : Form
+    public partial class frmEmployeeLogin : Form
     {
-        public EmployeeLogin()
+        public frmEmployeeLogin()
         {
             InitializeComponent();
         }

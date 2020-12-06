@@ -17,7 +17,15 @@ namespace cs325_coreproject
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
+        { 
+            
+            frmLogin loginform = new frmLogin();
+            loginform.Show();
+            this.Hide();
+        }
+
+        private void btnCreate_Click(object sender, EventArgs e)
         {
 
         }
