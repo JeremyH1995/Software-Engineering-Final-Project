@@ -35,18 +35,20 @@ namespace cs325_coreproject
             // 
             // Login
             // 
-            this.Login.Location = new System.Drawing.Point(289, 196);
+            this.Login.Location = new System.Drawing.Point(126, 91);
+            this.Login.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Login.Name = "Login";
-            this.Login.Size = new System.Drawing.Size(240, 52);
+            this.Login.Size = new System.Drawing.Size(221, 64);
             this.Login.TabIndex = 0;
             this.Login.Text = "Login";
             this.Login.UseVisualStyleBackColor = true;
             // 
             // Create
             // 
-            this.Create.Location = new System.Drawing.Point(289, 254);
+            this.Create.Location = new System.Drawing.Point(126, 163);
+            this.Create.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Create.Name = "Create";
-            this.Create.Size = new System.Drawing.Size(240, 53);
+            this.Create.Size = new System.Drawing.Size(221, 65);
             this.Create.TabIndex = 1;
             this.Create.Text = "Create Account";
             this.Create.UseVisualStyleBackColor = true;
@@ -54,11 +56,12 @@ namespace cs325_coreproject
             // 
             // startupForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(480, 313);
             this.Controls.Add(this.Create);
             this.Controls.Add(this.Login);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "startupForm";
             this.Text = "startupForm";
             this.ResumeLayout(false);
