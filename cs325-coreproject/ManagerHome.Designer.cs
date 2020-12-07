@@ -78,6 +78,7 @@ namespace cs325_coreproject
             this.btnRemove.TabIndex = 4;
             this.btnRemove.Text = "Remove Employee";
             this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // lstEmployees
             // 

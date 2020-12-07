@@ -37,6 +37,18 @@ namespace cs325_coreproject
 
         }
 
+       
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            lstEmployees.Items.RemoveAt(lstEmployees.SelectedIndex);
+            updateListBox();
+        }
         private void updateListBox()
         {
             lstEmployees.Items.Clear();
@@ -46,9 +58,5 @@ namespace cs325_coreproject
             }
         }
 
-        private void btnEdit_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
