@@ -10,26 +10,27 @@ using System.Windows.Forms;
 
 namespace cs325_coreproject
 {
-    public partial class ManagerHome : Form
+    public partial class frmManagerHome : Form
     {
-        public ManagerHome()
+        List<Person> people = Database.getPeopleList();
+        List<Employee> employees;
+        public frmManagerHome()
         {
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void frmManagerHome_Load(object sender, EventArgs e)
         {
-
+            
+            
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnLogout_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
+            Database.logout();
+            frmStartupForm startupForm = new frmStartupForm();
+            startupForm.Show();
+            this.Close();
         }
     }
 }

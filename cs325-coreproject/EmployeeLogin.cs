@@ -13,16 +13,9 @@ namespace cs325_coreproject
     public partial class frmEmployeeLogin : Form
     {
         List<Employee> employee = new List<Employee>();
-        List<Person> people = Database.getPeopleList();  //do we want a different list for emp?
         public frmEmployeeLogin()
         {
             InitializeComponent();
-        }
-
-
-        private void txtEmail_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
@@ -53,6 +46,11 @@ namespace cs325_coreproject
             {
                 MessageBox.Show("EID and Password can't be empty!");
             }
+        }
+
+        private void frmEmployeeLogin_Load(object sender, EventArgs e)
+        {
+            employee = Database.generateEmployeeList();
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 namespace cs325_coreproject
 {
-    partial class ManagerHome
+    partial class frmManagerHome
     {
         /// <summary>
         /// Required designer variable.
@@ -29,81 +29,88 @@ namespace cs325_coreproject
         /// </summary>
         private void InitializeComponent()
         {
-            this.Logout = new System.Windows.Forms.Button();
-            this.Add = new System.Windows.Forms.Button();
-            this.Edit = new System.Windows.Forms.Button();
-            this.Remove = new System.Windows.Forms.Button();
-            this.EmpListBox = new System.Windows.Forms.ListBox();
+            this.btnLogout = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.btnRemove = new System.Windows.Forms.Button();
+            this.lstEmployees = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
-            // Logout
+            // btnLogout
             // 
-            this.Logout.Location = new System.Drawing.Point(12, 12);
-            this.Logout.Name = "Logout";
-            this.Logout.Size = new System.Drawing.Size(75, 23);
-            this.Logout.TabIndex = 0;
-            this.Logout.Text = "Logout";
-            this.Logout.UseVisualStyleBackColor = true;
+            this.btnLogout.Location = new System.Drawing.Point(16, 15);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(100, 28);
+            this.btnLogout.TabIndex = 0;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
-            // Add
+            // btnAdd
             // 
-            this.Add.Location = new System.Drawing.Point(233, 209);
-            this.Add.Name = "Add";
-            this.Add.Size = new System.Drawing.Size(109, 23);
-            this.Add.TabIndex = 2;
-            this.Add.Text = "Add Employee";
-            this.Add.UseVisualStyleBackColor = true;
-            this.Add.Click += new System.EventHandler(this.button3_Click);
+            this.btnAdd.Location = new System.Drawing.Point(168, 86);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(132, 58);
+            this.btnAdd.TabIndex = 2;
+            this.btnAdd.Text = "Add Employee";
+            this.btnAdd.UseVisualStyleBackColor = true;
             // 
-            // Edit
+            // btnEdit
             // 
-            this.Edit.Location = new System.Drawing.Point(233, 238);
-            this.Edit.Name = "Edit";
-            this.Edit.Size = new System.Drawing.Size(109, 23);
-            this.Edit.TabIndex = 3;
-            this.Edit.Text = "Edit Employee";
-            this.Edit.UseVisualStyleBackColor = true;
-            this.Edit.Click += new System.EventHandler(this.button4_Click);
+            this.btnEdit.Location = new System.Drawing.Point(168, 152);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(132, 58);
+            this.btnEdit.TabIndex = 3;
+            this.btnEdit.Text = "Edit Employee";
+            this.btnEdit.UseVisualStyleBackColor = true;
             // 
-            // Remove
+            // btnRemove
             // 
-            this.Remove.Location = new System.Drawing.Point(233, 267);
-            this.Remove.Name = "Remove";
-            this.Remove.Size = new System.Drawing.Size(109, 23);
-            this.Remove.TabIndex = 4;
-            this.Remove.Text = "Remove Employee";
-            this.Remove.UseVisualStyleBackColor = true;
+            this.btnRemove.Location = new System.Drawing.Point(168, 218);
+            this.btnRemove.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRemove.Name = "btnRemove";
+            this.btnRemove.Size = new System.Drawing.Size(132, 58);
+            this.btnRemove.TabIndex = 4;
+            this.btnRemove.Text = "Remove Employee";
+            this.btnRemove.UseVisualStyleBackColor = true;
             // 
-            // EmpListBox
+            // lstEmployees
             // 
-            this.EmpListBox.FormattingEnabled = true;
-            this.EmpListBox.Location = new System.Drawing.Point(233, 108);
-            this.EmpListBox.Name = "EmpListBox";
-            this.EmpListBox.Size = new System.Drawing.Size(109, 95);
-            this.EmpListBox.TabIndex = 5;
+            this.lstEmployees.FormattingEnabled = true;
+            this.lstEmployees.ItemHeight = 16;
+            this.lstEmployees.Location = new System.Drawing.Point(16, 82);
+            this.lstEmployees.Margin = new System.Windows.Forms.Padding(4);
+            this.lstEmployees.Name = "lstEmployees";
+            this.lstEmployees.Size = new System.Drawing.Size(144, 196);
+            this.lstEmployees.TabIndex = 5;
             // 
-            // ManagerHome
+            // frmManagerHome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.EmpListBox);
-            this.Controls.Add(this.Remove);
-            this.Controls.Add(this.Edit);
-            this.Controls.Add(this.Add);
-            this.Controls.Add(this.Logout);
-            this.Name = "ManagerHome";
+            this.ClientSize = new System.Drawing.Size(354, 310);
+            this.Controls.Add(this.lstEmployees);
+            this.Controls.Add(this.btnRemove);
+            this.Controls.Add(this.btnEdit);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.btnLogout);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "frmManagerHome";
             this.Text = "ManagerHome";
+            this.Load += new System.EventHandler(this.frmManagerHome_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button Logout;
-        private System.Windows.Forms.Button Add;
-        private System.Windows.Forms.Button Edit;
-        private System.Windows.Forms.Button Remove;
-        private System.Windows.Forms.ListBox EmpListBox;
+        private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Button btnRemove;
+        private System.Windows.Forms.ListBox lstEmployees;
     }
 }

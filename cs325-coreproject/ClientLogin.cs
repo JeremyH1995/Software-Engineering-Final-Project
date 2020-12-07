@@ -13,7 +13,6 @@ namespace cs325_coreproject
     public partial class frmClientLogin : Form
     { 
         List<Client> clients = new List<Client>();
-        List<Person> people = Database.getPeopleList();
         public frmClientLogin()
         {
             InitializeComponent();
@@ -51,15 +50,7 @@ namespace cs325_coreproject
 
         private void frmClientLogin_Load(object sender, EventArgs e)
         {
-           
-
-            foreach(Person person in people)
-            {
-                if(person.GetType() == typeof(Client))
-                {
-                    clients.Add((Client)person);
-                }
-            }
+            clients = Database.generateClientList();
         }
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace cs325_coreproject
 {
-    public partial class startupForm : Form
+    public partial class frmStartupForm : Form
     {
-        public startupForm()
+        public frmStartupForm()
         {
             InitializeComponent();
         }

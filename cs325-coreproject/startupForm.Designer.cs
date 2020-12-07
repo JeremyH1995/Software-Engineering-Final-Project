@@ -1,7 +1,7 @@
 ﻿
 namespace cs325_coreproject
 {
-    partial class startupForm
+    partial class frmStartupForm
     {
         /// <summary>
         /// Required designer variable.
@@ -67,7 +67,7 @@ namespace cs325_coreproject
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // startupForm
+            // frmStartupForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -76,7 +76,7 @@ namespace cs325_coreproject
             this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.btnLogin);
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "startupForm";
+            this.Name = "frmStartupForm";
             this.Text = "startupForm";
             this.ResumeLayout(false);
 

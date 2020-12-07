@@ -16,7 +16,7 @@ namespace cs325_coreproject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new startupForm());
+            Application.Run(new frmStartupForm());
         }
     }
 }

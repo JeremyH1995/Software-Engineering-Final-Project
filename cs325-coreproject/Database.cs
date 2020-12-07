@@ -38,5 +38,31 @@ namespace cs325_coreproject
             return personList;
         }
 
+        public static List<Client> generateClientList()
+        {
+            List<Client> clients = new List<Client>();
+            foreach (Person person in personList)
+            {
+                if (person.GetType() == typeof(Client))
+                {
+                    clients.Add((Client)person);
+                }
+            }
+            return clients;
+        }
+
+        public static List<Employee> generateEmployeeList()
+        {
+            List<Employee> employees = new List<Employee>();
+            foreach (Person person in personList)
+            {
+                if (person.GetType() == typeof(Employee))
+                {
+                    employees.Add((Employee)person);
+                }
+            }
+            return employees;
+        }
+
     }
 }
