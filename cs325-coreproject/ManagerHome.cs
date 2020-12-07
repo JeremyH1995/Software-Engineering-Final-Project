@@ -34,7 +34,9 @@ namespace cs325_coreproject
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-
+            frmCreateEmp empForm = new frmCreateEmp();
+            empForm.Show();
+            this.Close();
         }
 
        
