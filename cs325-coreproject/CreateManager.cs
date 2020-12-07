@@ -16,5 +16,15 @@ namespace cs325_coreproject
         {
             InitializeComponent();
         }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            if(txtPassword.Text != "" && txtConfirm.Text != "")
+            {
+                string eid = "M" + Manager.getCount().ToString();
+                Manager manager = new Manager(eid, txtFirst.Text, txtLast.Text);
+                Database.addPerson(manager);
+            }
+        }
     }
 }

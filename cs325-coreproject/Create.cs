@@ -30,5 +30,13 @@ namespace cs325_coreproject
             createManager.Show();
             this.Close();
         }
+
+        private void frmCreate_Load(object sender, EventArgs e)
+        {
+            if(Manager.getCount() > 0)
+            {
+                btnManager.Hide();
+            }
+        }
     }
 }

@@ -29,12 +29,12 @@ namespace cs325_coreproject
                         if(c.getPassword() == txtPassword.Text)
                         {
                             Database.login(c);
-                            break;
                         }
                         else
                         {
                             MessageBox.Show("Incorrect Password");
                         }
+                        break;
                     }
                     else
                     {

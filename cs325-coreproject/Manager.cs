@@ -8,11 +8,19 @@ namespace cs325_coreproject
 {
     class Manager : Employee
     {
+        private static int count = 0;
         public Manager(string eid, string first, string last)
         {
             setEid(eid);
             setFirstName(first);
             setLastName(last);
+            count++;
+            
+        }
+
+        public static int getCount()
+        {
+            return count;
         }
     }
 }

@@ -62,6 +62,7 @@ namespace cs325_coreproject
             this.Controls.Add(this.btnClient);
             this.Name = "frmCreate";
             this.Text = "Create";
+            this.Load += new System.EventHandler(this.frmCreate_Load);
             this.ResumeLayout(false);
 
         }
