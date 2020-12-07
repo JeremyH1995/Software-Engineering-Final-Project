@@ -24,6 +24,14 @@ namespace cs325_coreproject
                 string eid = "M" + Manager.getCount().ToString();
                 Manager manager = new Manager(eid, txtFirst.Text, txtLast.Text);
                 Database.addPerson(manager);
+                MessageBox.Show("Your eid is " + eid.ToString());
+                frmStartupForm startup = new frmStartupForm();
+                startup.Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Password can't be empty");
             }
         }
     }

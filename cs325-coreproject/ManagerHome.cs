@@ -13,7 +13,7 @@ namespace cs325_coreproject
     public partial class frmManagerHome : Form
     {
         List<Person> people = Database.getPeopleList();
-        List<Employee> employees;
+        List<Employee> employees = Database.generateEmployeeList();
         public frmManagerHome()
         {
             InitializeComponent();
@@ -21,8 +21,7 @@ namespace cs325_coreproject
 
         private void frmManagerHome_Load(object sender, EventArgs e)
         {
-            
-            
+            updateListBox();   
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
@@ -32,5 +31,32 @@ namespace cs325_coreproject
             startupForm.Show();
             this.Close();
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            lstEmployees.Items.RemoveAt(lstEmployees.SelectedIndex);
+            updateListBox();
+        }
+        private void updateListBox()
+        {
+            lstEmployees.Items.Clear();
+            foreach (Employee emp in employees)
+            {
+                lstEmployees.Items.Add(emp);
+            }
+        }
+
     }
 }
