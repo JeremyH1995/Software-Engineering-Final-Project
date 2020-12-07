@@ -14,7 +14,7 @@ namespace cs325_coreproject
     { 
         List<Client> clients = new List<Client>();
         List<Person> people = Database.getPeopleList();
-        public frmClientLogin()
+        public frmEmployeeLogin()
         {
             InitializeComponent();
         }
