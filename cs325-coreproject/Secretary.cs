@@ -8,5 +8,11 @@ namespace cs325_coreproject
 {
     class Secretary : Employee
     {
+        public Secretary(string eid, string first, string last)
+        {
+            setEid(eid);
+            setFirstName(first);
+            setLastName(last);
+        }
     }
 }

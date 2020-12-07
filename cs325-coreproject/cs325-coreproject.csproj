@@ -48,11 +48,23 @@
   <ItemGroup>
     <Compile Include="Business.cs" />
     <Compile Include="Client.cs" />
+    <Compile Include="Create.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create.Designer.cs">
+      <DependentUpon>Create.cs</DependentUpon>
+    </Compile>
     <Compile Include="CreateClient.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CreateClient.Designer.cs">
       <DependentUpon>CreateClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateManager.Designer.cs">
+      <DependentUpon>CreateManager.cs</DependentUpon>
     </Compile>
     <Compile Include="Database.cs" />
     <Compile Include="Employee.cs" />
@@ -95,8 +107,14 @@
     <EmbeddedResource Include="ClientLogin.resx">
       <DependentUpon>ClientLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Create.resx">
+      <DependentUpon>Create.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CreateClient.resx">
       <DependentUpon>CreateClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateManager.resx">
+      <DependentUpon>CreateManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EmployeeLogin.resx">
       <DependentUpon>EmployeeLogin.cs</DependentUpon>

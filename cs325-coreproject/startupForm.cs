@@ -27,7 +27,14 @@ namespace cs325_coreproject
 
         private void btnCreate_Click(object sender, EventArgs e)
         {
+            frmCreate createForm = new frmCreate();
+            createForm.Show();
+            this.Hide();
+        }
 
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

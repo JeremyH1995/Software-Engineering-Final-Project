@@ -25,6 +25,9 @@ namespace cs325_coreproject
                 {
                     Client newclient = new Client(txtFirst.Text, txtLast.Text, txtPassword.Text, txtEmail.Text, txtPhone.Text, txtContact.Text);
                     Database.addPerson(newclient);
+                    frmClientLogin clientForm = new frmClientLogin();
+                    clientForm.Show();
+                    this.Close();
                 }
                 else
                 {

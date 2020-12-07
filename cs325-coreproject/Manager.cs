@@ -8,5 +8,11 @@ namespace cs325_coreproject
 {
     class Manager : Employee
     {
+        public Manager(string eid, string first, string last)
+        {
+            setEid(eid);
+            setFirstName(first);
+            setLastName(last);
+        }
     }
 }

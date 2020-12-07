@@ -31,11 +31,12 @@ namespace cs325_coreproject
         {
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnCreate = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(126, 91);
+            this.btnLogin.Location = new System.Drawing.Point(125, 50);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(221, 64);
@@ -46,7 +47,7 @@ namespace cs325_coreproject
             // 
             // btnCreate
             // 
-            this.btnCreate.Location = new System.Drawing.Point(126, 163);
+            this.btnCreate.Location = new System.Drawing.Point(125, 122);
             this.btnCreate.Margin = new System.Windows.Forms.Padding(4);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(221, 65);
@@ -55,11 +56,23 @@ namespace cs325_coreproject
             this.btnCreate.UseVisualStyleBackColor = true;
             this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(125, 195);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(221, 65);
+            this.btnExit.TabIndex = 2;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // startupForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(480, 313);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.btnLogin);
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -73,5 +86,6 @@ namespace cs325_coreproject
 
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnCreate;
+        private System.Windows.Forms.Button btnExit;
     }
 }
