@@ -10,16 +10,31 @@ using System.Windows.Forms;
 
 namespace cs325_coreproject
 {
-    public partial class CreateClient : Form
+    public partial class frmCreateClient : Form
     {
-        public CreateClient()
+        public frmCreateClient()
         {
             InitializeComponent();
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void btnSubmit_Click(object sender, EventArgs e)
         {
-
+            if(txtEmail.Text != "" && txtPassword.Text != "" && txtConfirm.Text != "")
+            {
+                if(txtPassword.Text == txtConfirm.Text)
+                {
+                    Client newclient = new Client(txtFirst.Text, txtLast.Text, txtPassword.Text, txtEmail.Text, txtPhone.Text, txtContact.Text);
+                    Database.addPerson(newclient);
+                }
+                else
+                {
+                    MessageBox.Show("Password does not match the confirm textbox");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Email and password can't be empty");
+            }
         }
     }
 }

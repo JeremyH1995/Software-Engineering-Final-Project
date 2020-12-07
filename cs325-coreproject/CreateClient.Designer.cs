@@ -1,7 +1,7 @@
 ﻿
 namespace cs325_coreproject
 {
-    partial class CreateClient
+    partial class frmCreateClient
     {
         /// <summary>
         /// Required designer variable.
@@ -29,33 +29,37 @@ namespace cs325_coreproject
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.EmailLabel = new System.Windows.Forms.Label();
             this.PaswordLabel = new System.Windows.Forms.Label();
-            this.PasswordTextBox = new System.Windows.Forms.TextBox();
-            this.PhoneTextBox = new System.Windows.Forms.TextBox();
-            this.AddressTextBox = new System.Windows.Forms.TextBox();
-            this.PrimeContactTextBox = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtPhone = new System.Windows.Forms.TextBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.txtContact = new System.Windows.Forms.TextBox();
             this.PhoneNumber = new System.Windows.Forms.Label();
             this.Address = new System.Windows.Forms.Label();
             this.PrimaryContact = new System.Windows.Forms.Label();
-            this.Submit = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btnSubmit = new System.Windows.Forms.Button();
+            this.txtConfirm = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtLast = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtFirst = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtEmail
             // 
-            this.textBox1.Location = new System.Drawing.Point(231, 87);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(132, 22);
-            this.textBox1.TabIndex = 0;
+            this.txtEmail.Location = new System.Drawing.Point(231, 30);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(132, 22);
+            this.txtEmail.TabIndex = 0;
             // 
             // EmailLabel
             // 
             this.EmailLabel.AutoSize = true;
-            this.EmailLabel.Location = new System.Drawing.Point(172, 91);
+            this.EmailLabel.Location = new System.Drawing.Point(170, 35);
             this.EmailLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.EmailLabel.Name = "EmailLabel";
             this.EmailLabel.Size = new System.Drawing.Size(50, 17);
@@ -72,37 +76,37 @@ namespace cs325_coreproject
             this.PaswordLabel.TabIndex = 2;
             this.PaswordLabel.Text = "Password: ";
             // 
-            // PasswordTextBox
+            // txtPassword
             // 
-            this.PasswordTextBox.Location = new System.Drawing.Point(231, 119);
-            this.PasswordTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.PasswordTextBox.Name = "PasswordTextBox";
-            this.PasswordTextBox.Size = new System.Drawing.Size(132, 22);
-            this.PasswordTextBox.TabIndex = 3;
+            this.txtPassword.Location = new System.Drawing.Point(231, 119);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(132, 22);
+            this.txtPassword.TabIndex = 3;
             // 
-            // PhoneTextBox
+            // txtPhone
             // 
-            this.PhoneTextBox.Location = new System.Drawing.Point(231, 176);
-            this.PhoneTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.PhoneTextBox.Name = "PhoneTextBox";
-            this.PhoneTextBox.Size = new System.Drawing.Size(132, 22);
-            this.PhoneTextBox.TabIndex = 4;
+            this.txtPhone.Location = new System.Drawing.Point(231, 176);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(132, 22);
+            this.txtPhone.TabIndex = 4;
             // 
-            // AddressTextBox
+            // txtAddress
             // 
-            this.AddressTextBox.Location = new System.Drawing.Point(231, 208);
-            this.AddressTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.AddressTextBox.Name = "AddressTextBox";
-            this.AddressTextBox.Size = new System.Drawing.Size(132, 22);
-            this.AddressTextBox.TabIndex = 5;
+            this.txtAddress.Location = new System.Drawing.Point(231, 208);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(132, 22);
+            this.txtAddress.TabIndex = 5;
             // 
-            // PrimeContactTextBox
+            // txtContact
             // 
-            this.PrimeContactTextBox.Location = new System.Drawing.Point(231, 240);
-            this.PrimeContactTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.PrimeContactTextBox.Name = "PrimeContactTextBox";
-            this.PrimeContactTextBox.Size = new System.Drawing.Size(132, 22);
-            this.PrimeContactTextBox.TabIndex = 6;
+            this.txtContact.Location = new System.Drawing.Point(231, 240);
+            this.txtContact.Margin = new System.Windows.Forms.Padding(4);
+            this.txtContact.Name = "txtContact";
+            this.txtContact.Size = new System.Drawing.Size(132, 22);
+            this.txtContact.TabIndex = 6;
             // 
             // PhoneNumber
             // 
@@ -133,25 +137,25 @@ namespace cs325_coreproject
             this.PrimaryContact.Size = new System.Drawing.Size(116, 17);
             this.PrimaryContact.TabIndex = 9;
             this.PrimaryContact.Text = "Primary Contact: ";
-            this.PrimaryContact.Click += new System.EventHandler(this.label3_Click);
             // 
-            // Submit
+            // btnSubmit
             // 
-            this.Submit.Location = new System.Drawing.Point(231, 272);
-            this.Submit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Submit.Name = "Submit";
-            this.Submit.Size = new System.Drawing.Size(100, 28);
-            this.Submit.TabIndex = 10;
-            this.Submit.Text = "Submit";
-            this.Submit.UseVisualStyleBackColor = true;
+            this.btnSubmit.Location = new System.Drawing.Point(231, 272);
+            this.btnSubmit.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(131, 44);
+            this.btnSubmit.TabIndex = 10;
+            this.btnSubmit.Text = "Submit";
+            this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
-            // textBox2
+            // txtConfirm
             // 
-            this.textBox2.Location = new System.Drawing.Point(230, 149);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(132, 22);
-            this.textBox2.TabIndex = 12;
+            this.txtConfirm.Location = new System.Drawing.Point(230, 149);
+            this.txtConfirm.Margin = new System.Windows.Forms.Padding(4);
+            this.txtConfirm.Name = "txtConfirm";
+            this.txtConfirm.Size = new System.Drawing.Size(132, 22);
+            this.txtConfirm.TabIndex = 12;
             // 
             // label1
             // 
@@ -163,26 +167,66 @@ namespace cs325_coreproject
             this.label1.TabIndex = 11;
             this.label1.Text = "Confirm Password: ";
             // 
-            // CreateClient
+            // txtLast
+            // 
+            this.txtLast.Location = new System.Drawing.Point(229, 90);
+            this.txtLast.Margin = new System.Windows.Forms.Padding(4);
+            this.txtLast.Name = "txtLast";
+            this.txtLast.Size = new System.Drawing.Size(132, 22);
+            this.txtLast.TabIndex = 16;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(136, 93);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(84, 17);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "Last Name: ";
+            // 
+            // txtFirst
+            // 
+            this.txtFirst.Location = new System.Drawing.Point(230, 60);
+            this.txtFirst.Margin = new System.Windows.Forms.Padding(4);
+            this.txtFirst.Name = "txtFirst";
+            this.txtFirst.Size = new System.Drawing.Size(132, 22);
+            this.txtFirst.TabIndex = 14;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(143, 64);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(84, 17);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "First Name: ";
+            // 
+            // frmCreateClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(561, 351);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtLast);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtFirst);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtConfirm);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.Submit);
+            this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.PrimaryContact);
             this.Controls.Add(this.Address);
             this.Controls.Add(this.PhoneNumber);
-            this.Controls.Add(this.PrimeContactTextBox);
-            this.Controls.Add(this.AddressTextBox);
-            this.Controls.Add(this.PhoneTextBox);
-            this.Controls.Add(this.PasswordTextBox);
+            this.Controls.Add(this.txtContact);
+            this.Controls.Add(this.txtAddress);
+            this.Controls.Add(this.txtPhone);
+            this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.PaswordLabel);
             this.Controls.Add(this.EmailLabel);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtEmail);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "CreateClient";
+            this.Name = "frmCreateClient";
             this.Text = "Create Client Account";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -191,18 +235,22 @@ namespace cs325_coreproject
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label EmailLabel;
         private System.Windows.Forms.Label PaswordLabel;
-        private System.Windows.Forms.TextBox PasswordTextBox;
-        private System.Windows.Forms.TextBox PhoneTextBox;
-        private System.Windows.Forms.TextBox AddressTextBox;
-        private System.Windows.Forms.TextBox PrimeContactTextBox;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.TextBox txtPhone;
+        private System.Windows.Forms.TextBox txtAddress;
+        private System.Windows.Forms.TextBox txtContact;
         private System.Windows.Forms.Label PhoneNumber;
         private System.Windows.Forms.Label Address;
         private System.Windows.Forms.Label PrimaryContact;
-        private System.Windows.Forms.Button Submit;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button btnSubmit;
+        private System.Windows.Forms.TextBox txtConfirm;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtLast;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtFirst;
+        private System.Windows.Forms.Label label3;
     }
 }

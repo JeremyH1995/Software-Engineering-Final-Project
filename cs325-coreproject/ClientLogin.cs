@@ -21,7 +21,7 @@ namespace cs325_coreproject
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            if(txtEmail.Text != "" || txtPassword.Text != "")
+            if(txtEmail.Text != "" && txtPassword.Text != "")
             {
                 foreach(Client c in clients)
                 {
