@@ -38,95 +38,99 @@ namespace cs325_coreproject
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.PaswordLabel = new System.Windows.Forms.Label();
             this.btnSubmit = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtLast
             // 
-            this.txtLast.Location = new System.Drawing.Point(156, 71);
-            this.txtLast.Margin = new System.Windows.Forms.Padding(4);
+            this.txtLast.Location = new System.Drawing.Point(118, 58);
             this.txtLast.Name = "txtLast";
-            this.txtLast.Size = new System.Drawing.Size(132, 22);
+            this.txtLast.Size = new System.Drawing.Size(100, 20);
             this.txtLast.TabIndex = 26;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(63, 74);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(48, 61);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 17);
+            this.label2.Size = new System.Drawing.Size(64, 13);
             this.label2.TabIndex = 25;
             this.label2.Text = "Last Name: ";
             // 
             // txtFirst
             // 
-            this.txtFirst.Location = new System.Drawing.Point(157, 41);
-            this.txtFirst.Margin = new System.Windows.Forms.Padding(4);
+            this.txtFirst.Location = new System.Drawing.Point(118, 33);
             this.txtFirst.Name = "txtFirst";
-            this.txtFirst.Size = new System.Drawing.Size(132, 22);
+            this.txtFirst.Size = new System.Drawing.Size(100, 20);
             this.txtFirst.TabIndex = 24;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(70, 45);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(49, 36);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 17);
+            this.label3.Size = new System.Drawing.Size(63, 13);
             this.label3.TabIndex = 23;
             this.label3.Text = "First Name: ";
             // 
             // txtConfirm
             // 
-            this.txtConfirm.Location = new System.Drawing.Point(157, 130);
-            this.txtConfirm.Margin = new System.Windows.Forms.Padding(4);
+            this.txtConfirm.Location = new System.Drawing.Point(118, 106);
             this.txtConfirm.Name = "txtConfirm";
-            this.txtConfirm.Size = new System.Drawing.Size(132, 22);
+            this.txtConfirm.Size = new System.Drawing.Size(100, 20);
             this.txtConfirm.TabIndex = 22;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 135);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(15, 109);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 17);
+            this.label1.Size = new System.Drawing.Size(97, 13);
             this.label1.TabIndex = 21;
             this.label1.Text = "Confirm Password: ";
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(158, 100);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPassword.Location = new System.Drawing.Point(118, 81);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(132, 22);
+            this.txtPassword.Size = new System.Drawing.Size(100, 20);
             this.txtPassword.TabIndex = 20;
             // 
             // PaswordLabel
             // 
             this.PaswordLabel.AutoSize = true;
-            this.PaswordLabel.Location = new System.Drawing.Point(71, 104);
-            this.PaswordLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.PaswordLabel.Location = new System.Drawing.Point(53, 84);
             this.PaswordLabel.Name = "PaswordLabel";
-            this.PaswordLabel.Size = new System.Drawing.Size(77, 17);
+            this.PaswordLabel.Size = new System.Drawing.Size(59, 13);
             this.PaswordLabel.TabIndex = 19;
             this.PaswordLabel.Text = "Password: ";
             // 
             // btnSubmit
             // 
-            this.btnSubmit.Location = new System.Drawing.Point(156, 170);
+            this.btnSubmit.Location = new System.Drawing.Point(117, 138);
+            this.btnSubmit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(121, 57);
+            this.btnSubmit.Size = new System.Drawing.Size(101, 46);
             this.btnSubmit.TabIndex = 27;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = true;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(11, 138);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(101, 46);
+            this.btnBack.TabIndex = 28;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            // 
             // frmCreateManager
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(381, 260);
+            this.ClientSize = new System.Drawing.Size(286, 211);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.txtLast);
             this.Controls.Add(this.label2);
@@ -136,6 +140,7 @@ namespace cs325_coreproject
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.PaswordLabel);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmCreateManager";
             this.Text = "CreateManager";
             this.ResumeLayout(false);
@@ -154,5 +159,6 @@ namespace cs325_coreproject
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label PaswordLabel;
         private System.Windows.Forms.Button btnSubmit;
+        private System.Windows.Forms.Button btnBack;
     }
 }
